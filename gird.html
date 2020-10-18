@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-family: 'Montserrat', sans-serif;
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.conatiner{
+			display: flex;
+
+		}
+		h3{
+			text-align: center;
+			margin-bottom: 10px;
+
+		}
+		
+		nav ul{
+			float: right;
+			list-style: none;
+			margin-right: 20px;
+			padding: 0px;
+			margin-bottom: 0px;
+		}
+		ul li{
+			display: inline;
+			margin-right :10px;
+		}
+		nav h2{
+			line-height: 30px;
+			margin: 0px 20px;
+		}
+		nav{
+			height: 100px;
+			background-color: black;
+			color: white;
+
+		}
+		.product{
+			display: flex;
+			margin: 20px;
+			padding: 8px;
+			justify-content: space-between;
+			align-items: center;
+			letter-spacing: 2px;
+			margin-bottom: 10px;
+		  
+
+		}
+		.about{
+           justify-content: center;
+           align-items: center;
+           height: 70px;
+           background-color: black;
+           color:white;
+           display: flex;
+		}
+		.clients{
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		    display: flex;
+		    margin-bottom: 40px;
+		}
+		.contact{
+			text-align: center;
+			margin-bottom: 40px;
+			
+		}
+		.misson{
+			display: flex;
+			margin-bottom: 40px;
+		}
+		.abou{
+			margin-bottom: 20px;
+		}
+		#mff{
+		 box-shadow: 4px 4px grey;
+		 margin: 5px;
+		}
+		#joc{
+		 box-shadow: 4px 4px grey;
+		  margin: 5px;
+		}
+		#ocbs{
+		 box-shadow: 4px 4px grey;
+		  margin: 5px;
+		}
+		.form{
+			background-color: powderblue;
+			border-image: 5px;
+			padding: 30px;
+			height: 400px;
+			border:1px solid black;
+			justify-content: center;
+			display: flex;
+		}
+		input[type=text]{
+			width: 100%;
+			padding: 5px;
+			margin: 5px;
+			border-bottom: 2px solid red;
+			border-radius: 10px;
+
+		}
+		input[type=submit]{
+			width: 100%;
+			padding: 5px;
+			background-color: black;
+			color:white;
+			margin: 5px;
+			border-radius: 10px;
+
+
+		}
+		input[type=submit]:hover{
+			background-color: green;
+			color:black;
+			cursor: pointer;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		
+		var images=[];
+		images[0]='bank/and.png'
+		images[1]='bank/hdfc.jpg'
+		images[2]='bank/vij.png'
+		images[3]='bank/icic.png'
+		images[4]='bank/kotak.jpg'
+		images[4]='bank/sbi.jpg'
+		var time=4000;
+		var i=0;
+
+		function changeImga(){
+           document.slide.src=images[i];
+           if(i<images.length-1){
+           	i++;
+           }else{
+           	i=0;
+           }
+			setTimeout("changeImga()",time)
+		}
+		window.onload=changeImga
+	</script>
+</head>
+<body>
+  <div class="container">
+  	<nav>
+  	<h2>My Website</h2>
+  	<ul>
+  		<li>Products</li>
+  		<li>Contact</li>
+  		<li>Clients</li>
+  		<li>About</li>
+  	</ul>
+  	</nav>
+  	<div class="banner">
+  		<img src="banner.jpg" width="100%" height="500px">
+  	</div>
+  	<h3>Our Products</h3>
+  	<div class="product" id="product">
+  		<div id="mff">
+  			<h3>Mobile First Finance</h3>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		</div>
+  		<div id="ocbs">
+  			<h3>Open CBS</h3>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		</div>
+  		<div id="joc">
+  			<h3>Jocata</h3>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		</div>
+  	</div>
+  	<div class="contact" id="contact">
+  		<h3>Contact Us</h3>
+  		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		 <br>
+  		<div class="form">
+		
+<form>
+	<h3 align="center">Contact Form</h3>
+	<label>Name</label>
+	<input type="text" name="name">
+	<label>Email</label>
+	<input type="text" name="name">
+	<label>Address</label>
+	<input type="text" name="name">
+	<input type="submit">
+	</form>
+	</div>
+  	</div>
+  		<div class="misson">
+  			<div>
+  		 <h3>Our Mission</h3>
+  		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		 </div>
+  		 <div>
+  		  <h3>Our Vision</h3>
+  		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		 </div>
+  		</div>
+
+
+  		<div class="abou">
+  		<h3>ABOUT US</h3>
+  		<p align="center">It is locatated at 27.2046° N, 77.4977° E</p>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  	</div>
+
+    </div>
+
+
+  		
+  	<div class="clients" id="client">
+  		<h3>Our Clients</h3>
+  		<hr>
+  		<img name="slide" width="200px" height="100px">
+
+    </div>
+  	<div class="about">  
+  		<div>
+  		MyWebsite &copy;2020 |All right Reserved
+  		</div>
+  	</div>
+  </div>
+</div>
+</body>
+</html>
